@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=SUSE:wght@100..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Poppins;
+    width: 100vw;
+    height: 100vh;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+}
+
+.links a{
+    text-decoration: none;
+    color: #000;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav{
+    flex-direction: row;
+    justify-items: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.logo img{
+    width: 9.4rem;
+    height: auto;
+}
+
+.titulos{
+    font-family: SUSE;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main{
+    width: 40vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-img{
+    width: 55vw;
+    height: auto;
+}
+
+.main-img img{
+    width:65rem;
+    height:auto;
+}
+
+.escrito{
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.escrito h1{
+    font-size: 50px;
+}
+
+.escrito h2{
+    font-size: 30px;
+}
+
+@media(max-width:800px){
+    .links{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .main{
+        width: 50vw;
+    }
+    .main-img img{
+        width: 400px;
+        padding: 40px 40px 40px 0;
+    }
+    .escrito{
+        width: 400px;
+        padding-right: 100px;
+    }
+    .escrito h1{
+        font-size: 25px;
+    }
+    .escrito h2{
+        font-size: 15px;
+    }
+    .titulos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
